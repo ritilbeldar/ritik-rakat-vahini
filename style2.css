@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;  
+    /* background-color: red; */
+}
+.your-place{
+    width: 100%;
+    height: 41.5vmax;
+    display: flex;
+    justify-content: start;
+    background-color: black;
+}
+.donat{
+    background-color: white;
+}
+.in-your-place{
+    height: 33.8vmax;
+    width: 50vmax;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B0131A;
+    border-radius: 25px;
+    animation: in-your-place 1s 1.2s both;
+    position: absolute;
+    top: -950%;
+    right: 50%;
+    transition: 1s;
+
+
+}
+.your-place h2:hover .in-your-place{
+    display: inline;    
+    display: flex;
+    transform: translate(0,180%);
+    
+} 
+.your-place h2:hover{
+    color: black;
+}
+.donat-your{
+    background-color: black;
+    margin-left: 45%;
+    animation: donat-your 1s 2s both;
+
+}
+.in-your-place h1{
+    font-size: 55px;
+    letter-spacing: 10px;
+    margin-top: 5%;
+    color: white;
+}
+.donat-your h1{
+    color: #B0131A;
+}
+.in-your-place input{
+    height: 2.5vmax;
+    width: 20vmax;
+    padding: 0 0 0 25px;
+    margin-top: 5%;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    
+}
+.donat-your input{
+    background-color: #B0131A;
+    color: white;
+}
+.in-your-place button{
+    margin-top: 4%;
+    padding: 10px 35px;
+    border:none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .25s;
+}
+.in-your-place button:hover{
+    background-color: white;
+    color: black;
+}
+.your-place h2{
+    /* background-color: red; */
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    transition: .70s;
+    cursor: pointer;
+}

@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;  
+}
+::placeholder{
+    /* color: white; */
+    font-weight: 600;
+}
+nav{
+    height: 7vmax;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 0 5vmax;
+}
+@keyframes nav{
+    from {
+        transform: translateY(-5vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-0);
+        opacity: 1;
+    }
+}
+@keyframes nav-img{
+    from {
+        transform: translatex(-5vh);
+        opacity: 0;
+    }
+    to {
+        transform: translatex(-0);
+        opacity: 1;
+    }
+}
+nav img{
+    height: 115px;
+    margin-left: -2%;
+    animation: nav-img .80s 1s both;
+    /* background-color: red; */
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 50vmax;
+    margin-top: 2.5%;
+}
+ul a{
+    text-decoration: none;
+    color: #B0131A;
+    font-weight: 800;
+    animation: nav 1s 1.5s both;
+
+}
+ul a:hover{
+    color: white;
+}
+#wight-color{
+    color: white;
+}
+#wight-color:hover{
+    color: #B0131A;
+}
+.button{
+    margin-right: -25px;
+    margin-top: 2.5%;
+    animation: nav 1s 1.5s both;
+}
+nav button{
+    padding: 7px 17px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #B0131A;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .25s;
+    
+    
+}
+nav button:hover{
+    background-color: #B0131A;
+    color: white;
+    
+}
+#buton-color{
+    background-color: #B0131A;
+    color: white;
+}
+#buton-color:hover{
+    background-color: white;
+    color: red;
+}
+.main-img{
+    width: 100%;
+    height: 45vmax;
+    background: url(/bg\ 2.webp);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main-img img{
+    height: 180px;
+    position: absolute;
+    z-index: 5;
+    left: 80.5%;
+    top: 38%;
+    animation: img-d 2s 1s both;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    
+}
+@keyframes img-d{
+    from {
+        transform: translatex(-180vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-3vmax);
+        opacity: 1;
+    }
+}
+.your-place{
+    width: 100%;
+    height: 41.5vmax;
+    display: flex;
+    justify-content: start;
+    background-color: black;
+    position: relative;
+}
+.donat{
+    background-color: white;
+}
+.in-your-place{
+    height: 33.8vmax;
+    width: 50vmax;
+    margin-left: 4%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #B0131A;
+    border-radius: 25px;
+    position: absolute;  
+    top: -150%;
+    right: 200%;
+    transition: 1s;
+}
+.your-place h2:hover .in-your-place{
+    /* display: inline;     */
+    display: flex;
+    transform: translate(180%,0);
+    
+} 
+.your-place h2:hover{
+    color: black;
+}
+.your-place h2{
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    transition: .70s;
+    cursor: pointer;
+}
+.donat h2{
+    color: black;
+    font-weight: 900;
+}
+.donat h2:hover{
+    color: white;
+}
+.donat-your{
+    background-color: black;
+    margin-left: 45%;
+
+}
+
+.in-your-place h1{
+    font-size: 55px;
+    letter-spacing: 10px;
+    margin-top: 5%;
+    color: white;
+}
+.donat-your h1{
+    color: #B0131A;
+}
+.in-your-place input{
+    height: 2.5vmax;
+    width: 20vmax;
+    padding: 0 0 0 25px;
+    margin-top: 5%;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    
+}
+.donat-your input{
+    background-color: #B0131A;
+    color: white;
+}
+.in-your-place button{
+    margin-top: 4%;
+    padding: 10px 35px;
+    border:none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: .25s;
+}
+.in-your-place button:hover{
+    background-color: white;
+    color: black;
+}
+.donat-your button{
+    background-color: white;
+    color: black;
+    font-weight: 600; 
+    cursor: pointer;
+    transition: .25s;
+}
+.donat-your button:hover{
+    background-color: #B0131A;
+    color: white;
+}
+.donat-your ::placeholder{
+    color: white;
+    font-weight: 600;
+}
+.in-your-place::placeholder{
+    color: black;
+}
+.blood-donet{
+    width: 100%;
+    height: 45vmax;
+    background: url(/bg\ img\ blood.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: .1px solid red;
+}
+.blood-donet h1{
+    font-size: 60px;
+    margin-top: 40%;
+    margin-left: 40%;
+    color: white;
+
+}
+.last{
+    height: 10vmax;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vmax;
+    background-color: black;
+
+}
+.contect{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+.contect h3{
+    font-size: 13px;
+    color: red;
+}
+.contect span{
+    font-size: 17px;
+    color: white;
+}
+.contect input{
+    height: 2vmax;
+    padding: 0 0 0 15px;
+    margin-top: 5%;
+    background-color: #B0131A;
+    border: none;
+    border-radius: 20px;
+}
+
+.find-button{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2%;
+    margin-left: -20%;
+}
+.find-button button{
+    margin-top: 8%;  
+    padding: 12px 40px;
+    border:none;
+    border-radius: 20px;
+    background-color: #B0131A;
+    color: white;
+    cursor: pointer;
+    
+}
+#button2{
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+.last img{
+    height: 180px;
+}
+.last-to-last{
+    height: 3vmax;
+    background-color: black;
+}
+.last-to-last h4{
+    font-size: 12px;
+    margin-left: 10%;
+    color: white;
+}
+.last-to-last span{
+    font-size: 18px;
+    color: #B0131A;
+   
+}
+@media (min-width:1500px){
+    nav i{
+        display: none;
+    }
+}
+@media (max-width:451px){
+    nav img{
+        height: 70px;
+    }
+    nav a{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    nav i{
+        display: flex;
+        color: white;
+    }
+    .main-img{
+        width: 100%;
+        height: 30%;
+        /* background-size: cover; */
+
+    }
+    .main-img img{
+        height: 50px;
+        margin-left: .5%;
+        margin-top: 2.5%;
+    }
+    .your-place{
+        justify-content: center;
+    }
+    .in-your-place h1{
+        letter-spacing: 4px;
+        font-size: 20px;
+    }
+    .in-your-place button{
+        font-size: 10px;
+        padding: 7px 20px;
+    }
+    ::placeholder{
+        font-size: 8px;
+    }
+    .donat{
+        justify-content: center;
+    }
+    .donat-your{
+        margin-left: 2%;
+    }
+    .donat button{
+        padding: 5px 20px;
+        /* font-size: 5px; */
+    }
+    .blood-donet h1{
+        font-size: 20px;
+        margin-left: 30%;
+        margin-top: 50%;
+    }
+    .last img{
+        height: 100px;
+    }
+    .contect h3{
+        font-size: 10px;
+    }
+
+    .contect span{
+        font-size: 12px;
+    }
+    .contect input{
+        height: 3vmax;
+        padding: 0 0 5px 10px;
+    }
+    .find-button{
+        margin-left: 5%;
+    }
+    .find-button button{
+        padding: 5px 10px;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+        .last-to-last{
+            height: 6vmax;
+            border-top: .1px solid black;
+        }
+        .last-to-last h4 {
+            margin-top: 2%;
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .last-to-last span{
+            font-size: 15px;
+        }
+        .your-place h2{
+            font-size: 40px;
+            left: 20%;
+        }
+        .your-place h2:hover .in-your-place{
+            transform: translate(175%,0);
+        }
+
+}
